@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>DJ Leap</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script src="js/jquery.js"></script>
+		<script src="http://js.leapmotion.com/leap-0.6.3.min.js"></script>
+		<script src="js/djleap.js"></script>
+	</head>
+	<body onload="initPage()">
+		<canvas id="visualizer_render"></canvas>
+		<div id="image1">
+			<img id="artwork1" width="150" height="150">
+		</div>
+
+		<div id="artisttitle1">
+			<h1 id="artistname1"></h1>
+		</div>
+
+		<div id="songtitle1">
+				<h1 id="songname1"></h1>
+		</div>
+
+		<div id="status1">
+			<h1 id="statustext1"></h1>
+		</div>
+
+		<div id="image2">
+			<img id="artwork2" width="150" height="150">
+		</div>
+
+		<div id="artisttitle2" align="right">
+			<h1 id="artistname2"></h1>
+		</div>
+
+		<div id="songtitle2" align="right">
+				<h1 id="songname2"></h1>
+		</div>
+
+		<div id="status2" align="right">
+			<h1 id="statustext2"></h1>
+		</div>
+
+		<div id="hideBody">
+			<div id="title">
+				<h2>DJ Leap ft. SoundCloud</h2>
+			</div>
+
+			<div id="instruction1">
+				<h4>Main SoundCloud Track URL:</h4>
+			</div>
+
+			<div id="URLbox1">
+				<input
+					id="input_URL1"
+					type="textbox"
+					class="textbox"
+					name="URL1"
+					type="text"
+					value="https://soundcloud.com/anya-erlichman/lukas-rieger-faded-alan-walker-cover"
+					style="width: 300px;"
+					onclick="autoSelect1()"
+				/>
+			</div>
+
+			<div id="instruction2">
+				<h4>Secondary SoundCloud Track URL:</h4>
+			</div>
+
+			<div id="URLbox2">
+				<input
+					id="input_URL2"
+					type="textbox"
+					class="textbox"
+					name="URL2"
+					type="text"
+					value="https://soundcloud.com/pikahae/faded-alan-walker-violin-cover-by-robert-mendoza"
+					style="width: 300px;"
+					onclick="autoSelect2()"
+				/>
+			</div>
+
+			<div id="button_play">
+				<button
+					type="button"
+					class="button"
+					onclick="handleButton()"
+				>►</button>
+			</div>
+
+			<div id="button_pause">
+				<button
+					type="button"
+					class="button"
+					onclick="handleButtonStop()"
+				>&#9724;</button>
+			</div>
+
+			<div id="button_sync">
+				<button
+					type="button"
+					class="button"
+					onclick="syncbeats()"
+				>SYNC</button>
+			</div>
+
+			<div id="homelink">
+				<a class="link" href="http://dj-leap.com/">DJ-Leap.com</a>
+			</div>
+
+			<div id="credit">
+				<p> Team Free Pizza @ QHacks 2017
+				</p>
+			</div>
+		</div>
+
+		<div id="main">
+			<audio id="audio1" oncanplaythrough="onaudio1ready()" onended="audio2.pause();">
+				<source src="" type="audio/mpeg">
+			</audio>
+			<audio id="audio2" oncanplaythrough="onaudio2ready()" onended="audio2.play();">
+				<source src="" type="audio/mpeg">
+			</audio>
+			<audio loop id="beat1">
+				<source src="audio/beat6.mp3" type="audio/mpeg">
+			</audio>
+			<audio loop id="beat2">
+				<source src="audio/beat2.mp3" type="audio/mpeg">
+			</audio>
+			<audio loop id="beat3">
+				<source src="audio/beat3.mp3" type="audio/mpeg">
+			</audio>
+			<audio loop id="beat4">
+				<source src="audio/beat4.mp3" type="audio/mpeg">
+			</audio>
+			<audio loop id="beat5">
+				<source src="audio/beat5.mp3" type="audio/mpeg">
+			</audio>
+		</div>
+	</body>
+</html>

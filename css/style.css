@@ -1,0 +1,223 @@
+body{
+	margin: 0;
+	padding: 0;
+	display: block;
+	overflow: hidden;
+
+	font-family: "Lato", sans-serif;
+}
+
+.button {
+    background-color: #6600ff;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.textbox {
+    background: white;
+    border: 1px solid #6600ff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 3px #6600ff;
+    color: #666;
+    outline: none;
+    height:23px;
+    width: 275px;
+}
+
+#title {
+	color: white;
+	position: absolute;
+	bottom: -10px;
+	left: 10px;
+}
+
+#instruction1 {
+	color: white;
+	position: absolute;
+	bottom: 115px;
+	left: 10px;
+}
+
+#instruction2 {
+	color: white;
+	position: absolute;
+	bottom: 55px;
+	left: 10px;
+}
+
+#image1 {
+	position: absolute;
+	top: 0%;
+	left: 0%;
+}
+
+#image2 {
+	position: absolute;
+	top: 0%;
+	right: 0%;
+}
+
+#soundcloud {
+	position: absolute;
+	bottom: 40px;
+	left: 320px;
+	z-index: 2;
+}
+
+#artisttitle1 {
+	color: white;
+	position: absolute;
+	top: 40px;
+	left: 170px;
+	font-size: 50%;
+}
+
+#songtitle1 {
+	color: white;
+	position: absolute;
+	top: 0px;
+	left: 170px;
+	font-size: 70%;
+}
+
+#status1 {
+	color: white;
+	position: absolute;
+	top: 80px;
+	left: 170px;
+	font-size: 40%;
+}
+
+#artisttitle2 {
+	color: white;
+	position: absolute;
+	top: 40px;
+	right: 170px;
+	font-size: 50%;
+}
+
+#songtitle2 {
+	color: white;
+	position: absolute;
+	top: 0px;
+	right: 170px;
+	font-size: 70%;
+}
+
+#status2 {
+	color: white;
+	position: absolute;
+	top: 80px;
+	right: 170px;
+	font-size: 40%;
+}
+
+#URLbox1 {
+	z-index: 2;
+	position: absolute;
+	bottom: 105px;
+	left: 10px;
+	width: 300px;
+}
+
+#URLbox2 {
+	z-index: 2;
+	position: absolute;
+	bottom: 45px;
+	left: 10px;
+	width: 300px;
+}
+
+#button_play {
+	z-index: 2;
+	position: absolute;
+	bottom: 40px;
+	left: 310px;
+}
+
+#button_pause {
+	z-index: 2;
+	position: absolute;
+	bottom: 40px;
+	left: 340px;
+}
+
+#button_sync {
+	z-index: 2;
+	position: absolute;
+	bottom: 40px;
+	left: 380px;
+}
+
+#homelink {
+	position: absolute;
+	bottom: 40px;
+	right: 20px;
+
+	color: rgb(255, 255, 255);
+	opacity: 0.5;
+}
+
+#credit {
+	position: absolute;
+	bottom: 0px;
+	right: 20px;
+
+	color: rgb(255, 255, 255);
+	opacity: 0.5;
+}
+
+#scrubber {
+	z-index: 2;
+	position: absolute;
+	bottom: 110px;
+	left: 100px;
+}
+input[type=range]{
+    -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 300px;
+    height: 10px;
+    background: #ddd;
+    border: none;
+    border-radius: 3px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #6600ff;
+    margin-top: -4px;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #ccc;
+}
+
+#audioCurrentTime {
+	color: white;
+	position: absolute;
+	bottom: 90px;
+	left: 240px;
+	font-size: 70%;
+}
+
+.link {
+	color: rgb(255, 255, 255);
+}
